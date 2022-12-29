@@ -132,12 +132,12 @@ footer {
   font-weight: bold;
 }
 
-
-/* Main Section (index.html) */
+/**> index.html <**/
+/* Main Section */
 
 #main {
   text-align: center;
-  background-color: none;
+  background-color: black;
 }
 
 #main-container {
@@ -207,7 +207,7 @@ footer>div {
   top: 50px;
 }
 
-/* About Section (index.html) */
+/* About Section */
 
 #about {
   position: relative;
@@ -249,7 +249,7 @@ footer>div {
   font-size: 112.5%;
 }
 
-/* Gallery Section (index.html) */
+/* Gallery Section */
 
 #gallery {
   text-align: center;
@@ -284,3 +284,6 @@ footer>div {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+
