@@ -22,7 +22,7 @@ function goto() {
 
 
 function changeBckg() {
-  let bckgs = ['focaccia', 'spices', 'risotto'];
+  let bckgs = ['focaccia', 'spices', 'risotto', 'herbs'];
   let i = Math.floor(Math.random() * bckgs.length);
   let img = $('#main-img');
   while (img.prop('src').includes(bckgs[i])) {
