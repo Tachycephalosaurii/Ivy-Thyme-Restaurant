@@ -36,7 +36,7 @@ function changeBckg() {
   })
 }
 
-setInterval(changeBckg, 7500); //change every ten seconds
+if (window.location.href.includes('index')) setInterval(changeBckg, 7500); //change every ten seconds
 
 /* Header Transparency */
 setTimeout(() => goto(localStorage.getItem('scrollTo')));
