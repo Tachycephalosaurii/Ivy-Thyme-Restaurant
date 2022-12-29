@@ -1,4 +1,5 @@
 /* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -10,9 +11,7 @@
   font-style: normal;
 }
 
-:root {
-  --header-text: #fbf1da;
-}
+/* Main Rules */
 
 * {
   font-family: "Lora";
@@ -34,13 +33,30 @@ img {
   user-select: none;
 }
 
-a {
-  color: grey;
-}
-
 p {
   font-family: "Source Sans Pro";
 }
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 75%;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  height: inherit;
+  text-align: center;
+  font-family: "Source Sans Pro";
+}
+
+
+
+/* Header Rules */
 
 header {
   position: fixed;
@@ -51,7 +67,7 @@ header {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  color: var(--header-text);
+  color: #fbf1da;
   z-index: 999;
 }
 
@@ -93,6 +109,7 @@ svg#logo {
   height: 100%;
 }
 
+/* Footer Rules */
 
 .section,
 footer {
@@ -101,6 +118,22 @@ footer {
   height: 100vh;
   overflow: hidden;
 }
+
+footer {
+  background-color: #19160f;
+  color: white;
+  text-align: center;
+  height: 500px;
+  font-size: smaller;
+}
+
+.footer-h {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+
+/* Main Section (index.html) */
 
 #main {
   text-align: center;
@@ -164,6 +197,8 @@ footer {
   color: white;
 }
 
+
+
 #about>div,
 #gallery>div,
 footer>div {
@@ -172,70 +207,7 @@ footer>div {
   top: 50px;
 }
 
-#gallery {
-  text-align: center;
-}
-
-#gallery-title {
-  position: relative;
-  top: 100px;
-  font-size: 37.5px;
-  margin: 0;
-}
-
-#gallery-hash {
-  position: relative;
-  top: 100px;
-  font-style: italic;
-}
-
-#gallery>div {
-  background-color: #8d99ae;
-  position: relative;
-  top: calc(20%);
-  height: 60%;
-  text-align: center;
-}
-
-#gallery-container::-webkit-scrollbar {
-  display: none;
-}
-
-#gallery-container {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-
-footer {
-  background-color: #19160f;
-  color: white;
-  text-align: center;
-  height: 500px;
-  font-size: smaller;
-}
-
-.row {
-  content: "";
-  display: table;
-  clear: both;
-  width: 100%;
-  height: 75%;
-  text-align: center;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  height: inherit;
-  text-align: center;
-  font-family: "Source Sans Pro";
-}
-
-.footer-h {
-  font-size: 1.1em;
-  font-weight: bold;
-}
+/* About Section (index.html) */
 
 #about {
   position: relative;
@@ -275,4 +247,40 @@ footer {
   left: 12.5%;
   width: 75%;
   font-size: 112.5%;
+}
+
+/* Gallery Section (index.html) */
+
+#gallery {
+  text-align: center;
+}
+
+#gallery-title {
+  position: relative;
+  top: 100px;
+  font-size: 37.5px;
+  margin: 0;
+}
+
+#gallery-hash {
+  position: relative;
+  top: 100px;
+  font-style: italic;
+}
+
+#gallery>div {
+  background-color: #8d99ae;
+  position: relative;
+  top: calc(20%);
+  height: 60%;
+  text-align: center;
+}
+
+#gallery-container::-webkit-scrollbar {
+  display: none;
+}
+
+#gallery-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
