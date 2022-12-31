@@ -72,7 +72,7 @@ header {
 }
 
 #bckg-nav {
-  background-color: #363020;
+  background-color: #2b2208;
   position: absolute;
   width: 100%;
   height: inherit;
@@ -123,8 +123,8 @@ footer {
   background-color: #19160f;
   color: white;
   text-align: center;
-  height: 500px;
-  font-size: smaller;
+  height: 600px;
+  font-size: medium;
 }
 
 .footer-h {
@@ -289,16 +289,194 @@ footer>div {
 
 /**> menu.html <**/
 #menu {
-  
+  padding-top: 100px;
+  height: auto;
+
 }
 
-#menu-title {
-  position: relative;
-  top: 100px;
-
+#title {
   text-align: center;
   background-color: #5ac47d;
-  color:white;
+  color: white;
 
   font-size: 50px;
+}
+
+#menu-list {
+  position: relative;
+  width: 75%;
+  left: calc(12.5%);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.menu-header {
+  background-color: #f6f6f6;
+  overflow: hidden;
+  height: 50px;
+  border-bottom: solid 1px darkgray;
+  padding: 12.5px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  cursor: pointer;
+
+}
+
+.menu-header-title {
+  font-family: "Source Sans Pro";
+  position: relative;
+  bottom: 0.5em;
+}
+
+.menu-header-icon {
+  position: relative;
+  left: calc(100% + -50px);
+  bottom: 75px;
+}
+
+
+
+
+.menu-array {
+  overflow: hidden;
+}
+
+.menu-item {
+  padding: 25px;
+  padding-top: 0;
+  border-bottom: solid 1px lightgrey;
+  font-size: 1.25em;
+}
+
+.isOrdered {
+  border-left: solid 5px rgba(221, 136, 163);
+
+}
+
+.menu-item-name {
+  font-weight: bold;
+}
+
+.menu-item-price {
+  font-style: italic;
+  font-family: "Source Sans Pro";
+}
+
+.menu-item-control {
+  font-family: "Source Sans Pro";
+  position: relative;
+  left: calc(100% + -150px);
+  top: 2.5em;
+}
+
+.menu-item-count {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.menu-item-button {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 100%;
+  font-weight: bold;
+  font-family: "Source Sans Pro";
+  text-align: center;
+  background-color: #8d99ae;
+  border: solid 1px rgb(80, 80, 80);
+}
+.menu-item-button:hover {
+  background-color: #b3c2db;
+}
+.menu-item-button:active {
+  background-color: #788294;
+}
+.menu-item-button:disabled {
+  background-color: lightgray;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+#order-shortcut {
+  position: fixed;
+  top: 50%;
+  left: calc(100% + -75px);
+  border: solid 1px darkgrey;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+#order-shortcut:hover {
+  cursor: pointer;
+}
+
+#order-shortcut > svg {
+  position: relative;
+  width: 80%;
+  top: 5%;
+  left: 5%;
+}
+
+#checkout {
+  position: relative;
+  left: calc(50% + -10%);
+  width: 20%;
+  height: 75px;
+  margin-bottom: 50px;
+  border-radius: 100px;
+  border: none;
+  background-color: #8d99ae;
+}
+
+#checkout:hover {
+  cursor: pointer;
+  background-color: #b0bed6;
+}
+
+#checkout>h1 {
+  color: white;
+  font-family: "Source Sans Pro";
+  font-size: 3em;
+  position: relative;
+  bottom: calc(50% + -0.5em);
+}
+
+#total {
+  text-align: center;
+}
+
+/**> order.html <**/
+#order-list {
+  border: solid 2px black;
+  margin-top: 150px;
+  position: relative;
+  width: 40%;
+  min-height: 65%;
+  border-radius: 10%;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align:left;
+  font-size: 15px;
+  font-family: "Source Sans Pro";
+}
+
+#order-list > h1 {
+  text-align: center;
+}
+#order-list > ul {
+  font-size: 17px;
+}
+#list-container {
+  width: 100%;
+  height: 75%;
 }
