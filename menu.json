@@ -1,0 +1,38 @@
+{
+  "appetizers": [
+    {
+      "name": "Bruschetta",
+      "description": "",
+      "price": 7.99,
+      "group": "appetizers"
+    }
+  ],
+  "mains": [
+    {
+      "name": "Risotto ai Funghi",
+      "description": "Traditional italian dish made of rice, mushrooms, shallots, white wine, and some Parmesan cheese.",
+      "price": 13.95,
+      "group": "mains"
+    },
+    {
+      "name": "Pizza Margherita",
+      "description": "Our signature crust topped with tomato sauce, mozzarella, and our restaurant's fresh basil.",
+      "price": 13.95,
+      "group": "mains"
+    },
+    {
+      "name": "Spaghetti alla Carbonara",
+      "description": "",
+      "price": 12.95,
+      "group": "mains"
+    }
+  ],
+  "sides": [
+    {
+      "name": "Focaccia",
+      "description": "",
+      "price": 8.95,
+      "group": "sides"
+    }
+  ]
+}
