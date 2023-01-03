@@ -1,67 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Ivy & Thyme</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-
-  <template id="group">
-    <div class="menu-group">
-      <div class="menu-header">
-        <h1 class="menu-header-title"></h1>
-        <div class="menu-header-icon">
-          <svg width="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
-        </div>
-      </div>
-      <div class="menu-array"></div>
-    </div>
-  </template>
-  <template id="item">
-    <div class="menu-item">
-      <div class="menu-item-control">
-        <button class="menu-item-button" add="-1">&#8211;</button>
-        <input class="menu-item-count" type="number" value="0" min="0">
-        <button class="menu-item-button" add="1">+</button>
-      </div>
-      <div class="menu-item-name"></div>
-      <div class="menu-item-description"></div>
-      <div class="menu-item-price"></div>
-    </div>
-  </template>
-</head>
-
-<body>
-  <header></header>
-  <div id="menu" class="section">
-    <div id="title"> MENU</div>
-    <div id="menu-list"></div>
-    <h1 id="total">Total: $<span id="total-value">0.00</span></h1>
-  </div>
-
-  <button id="order-shortcut" onclick="goto('order.html')">
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
-        fill="currentColor" />
-      <path
-        d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
-        fill="currentColor" />
-      <path
-        d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
-        fill="currentColor" />
-    </svg>
-  </button>
-
-  <button id="checkout" onclick="goto('order.html')">
-    <h1>Checkout</h1>
-  </button>
-  <footer></footer>
-</body>
-
-</html>
+{
+  "appetizers": [
+    {
+      "name": "Bruschetta",
+      "description": "",
+      "price": 7.99
+    }
+  ],
+  "mains": [
+    {
+      "name": "Risotto ai Funghi",
+      "description": "Traditional italian dish made of rice, mushrooms, shallots, white wine, and some Parmesan cheese.",
+      "price": 13.95
+    },
+    {
+      "name": "Pizza Margherita",
+      "description": "Our signature crust topped with tomato sauce, mozzarella, and our restaurant's fresh basil.",
+      "price": 13.95
+    },
+    {
+      "name": "Spaghetti alla Carbonara",
+      "description": "",
+      "price": 12.95
+    }
+  ],
+  "sides": [
+    {
+      "name": "Focaccia",
+      "description": "",
+      "price": 8.95
+    }
+  ]
+}
